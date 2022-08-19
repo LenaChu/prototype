@@ -1,0 +1,18 @@
+.row--container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr auto;
+  grid-column-gap: 16px;
+  margin-top: 2.5rem;
+  row-gap: 0.875rem;
+}
+.row--container > h1 {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: left;
+}
+[class*="widget__container"] {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+}

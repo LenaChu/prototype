@@ -1,0 +1,16 @@
+.status-widget__container {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100%;
+  border: 1px solid var(--txt-dark-1);
+  border-radius: 4px;
+}
+.status-widget__header {
+  width: 100%;
+  height: 88px;
+}
+.status-widget__body {
+  width: 100%;
+}

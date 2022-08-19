@@ -1,0 +1,17 @@
+.profile--container {
+  align-items: center;
+  display: flex;
+}
+.profile--image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--txt-light-1);
+  color: var(--txt-light-1);
+  text-align: center;
+  line-height: 2.5rem;
+  margin-left: 0.5rem;
+}
+.profile--container > h5 {
+  color: var(--txt-light-1);
+}
