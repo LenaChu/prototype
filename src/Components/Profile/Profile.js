@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./profile.css";
 
 export default function Profile(props) {
@@ -6,7 +7,9 @@ export default function Profile(props) {
   return (
     <div className="profile--container">
       <h5>{username}</h5>
-      <div className="profile--image">{initials}</div>
+      <Link to="/">
+        <div className="profile--image">{initials}</div>
+      </Link>
     </div>
   );
 }

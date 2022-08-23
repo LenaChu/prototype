@@ -1,0 +1,11 @@
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(3.75rem, 10rem) auto;
+  grid-auto-rows: minmax(60px, auto);
+  grid-gap: 1rem;
+  grid-template-areas:
+    "nav header"
+    "nav main"
+    "nav main"
+    "nav main";
+}

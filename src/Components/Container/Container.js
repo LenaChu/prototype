@@ -5,12 +5,12 @@ import "./container.css";
 
 export default function Container() {
   return (
-    <div className="grid--container">
+    <main className="grid--container">
       <WelcomeWidget />
       <Row />
       <Row />
       <Row />
       <Row />
-    </div>
+    </main>
   );
 }

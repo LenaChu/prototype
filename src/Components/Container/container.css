@@ -1,11 +1,20 @@
+main {
+  grid-area: main;
+}
+
 .grid--container {
-  max-width: 1200px;
-  margin: 3.75rem auto;
-  margin-right: 160px;
+  min-width: 1080px;
+  margin: 0 auto;
   padding: 2.5rem 0;
 }
 
 [class*="widget__container"] {
   background-color: var(--txt-light-1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 4px rgba(0 0 0/20%), 0px 2px 8px rgba(0 0 0/16%);
+}
+
+@media only screen and (min-width: 1440px) {
+  .grid--container {
+    width: 1200px;
+  }
 }
