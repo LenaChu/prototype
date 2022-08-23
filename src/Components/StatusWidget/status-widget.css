@@ -8,9 +8,35 @@
   border-radius: 4px;
 }
 .status-widget__header {
-  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid var(--txt-dark-1);
+  display: flex;
+  padding: 1.5rem;
   height: 88px;
+  width: 100%;
+}
+.status-widget__icon-container {
+  align-items: center;
+  background-color: var(--primary-color-4);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .status-widget__body {
   width: 100%;
+  min-height: 176px;
+  padding: 1.5rem;
+  position: relative;
+  text-align: left;
+}
+.status-widget__hyperlink-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
 }

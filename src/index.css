@@ -19,7 +19,8 @@
   --txt-light-3: #edeff0;
   --txt-light-2: #f7f8fa;
   --txt-light-1: #ffffff;
-  --primary-color: #0b0829;
+  --primary-color-4: #0b0829;
+  --primary-color-3: #aeacbf;
   --bs-font-size: 16px;
   --h1-font-size: calc(var(--bs-font-size) * 1.5);
   --h2-font-size: calc(var(--bs-font-size) * 1.375);
@@ -67,6 +68,10 @@ h6,
   /* margin-bottom: 1rem; */
   /* text-transform: capitalize; */
   letter-spacing: 0;
+}
+
+body {
+  background-color: var(--txt-light-2);
 }
 
 h1,

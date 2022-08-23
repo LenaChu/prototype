@@ -1,0 +1,13 @@
+.main-nav__container {
+  background-color: var(--primary-color-3);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 160px;
+  z-index: 9;
+}
+
+.folded {
+  width: 60px;
+}
