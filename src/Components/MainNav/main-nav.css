@@ -5,13 +5,53 @@ nav {
   background-color: var(--primary-color-3);
   box-shadow: 0 2px 8px rgb(0 0 0/20%), 0 4px 16px rgb(0 0 0/16%);
   height: 100vh;
+  padding: 1.5rem 1rem;
   position: fixed;
   left: 0;
   top: 0;
   width: 10rem;
   z-index: 9;
+  transition: 0.4s ease-in-out;
+}
+.folded {
+  width: 4rem;
 }
 
-.folded {
-  width: 3.75rem;
+.hamburger-menu {
+  align-items: center;
+  border-radius: 4px;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+.hamburger-menu:hover > span {
+  background-color: var(--txt-dark-3);
+}
+.hamburger-menu > input {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+.hamburger-menu > span {
+  background-color: var(--txt-dark-4);
+  border-radius: 2px;
+  display: block;
+  height: 3px;
+  margin-bottom: 6px;
+  position: relative;
+  width: 30px;
+  transform: translateX(0);
+  transition: 0.2s ease-in;
+  z-index: 1;
+}
+.hamburger-menu input:checked ~ span.first-child {
+  transform: translateX(6px);
+}
+.hamburger-menu input:checked ~ span:nth-last-child(1) {
+  transform: translateX(-6px);
 }
