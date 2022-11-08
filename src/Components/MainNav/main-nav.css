@@ -9,19 +9,25 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  width: 10rem;
+  width: 12.5rem;
   z-index: 9;
   transition: 0.4s ease-in-out;
 }
 .folded {
   width: 4rem;
+  padding: 1.5rem 0;
 }
+
+/* .folded > .hamburger-menu {
+  left: 1rem;
+} */
 
 .hamburger-menu {
   align-items: center;
   border-radius: 4px;
   height: 32px;
   position: relative;
+  left: 1rem;
   width: 32px;
 }
 .hamburger-menu:hover > span {
@@ -46,7 +52,7 @@ nav {
   position: relative;
   width: 30px;
   transform: translateX(0);
-  transition: 0.2s ease-in;
+  transition: transform 0.4s ease-in-out, background-color 0.2s ease-in;
   z-index: 1;
 }
 .hamburger-menu input:checked ~ span.first-child {

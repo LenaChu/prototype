@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import NavButton from "../NavButton/NavButton";
+import { TiHome } from "react-icons/ti";
+import { TiUser } from "react-icons/ti";
+import { TbDeviceAnalytics } from "react-icons/tb";
 import "./main-nav.css";
 
 export default function MainNav() {
@@ -21,6 +25,13 @@ export default function MainNav() {
         <span></span>
         <span></span>
       </div>
+      <NavButton checked={checked} name={"Home"} Icon={<TiHome />} />
+      <NavButton checked={checked} name={"Profile"} Icon={<TiUser />} />
+      <NavButton
+        checked={checked}
+        name={"Analytics"}
+        Icon={<TbDeviceAnalytics />}
+      />
     </nav>
   );
 }
