@@ -1,6 +1,5 @@
 .nav-button__container {
   width: 100%;
-  /* border-bottom: 1px solid var(--txt-dark-2); */
   border-radius: 4px;
   color: var(--txt-dark-4);
   display: flex;
@@ -20,9 +19,6 @@
 .nav-button__icon {
   margin-right: 0.25rem;
 }
-.mr-0 {
-  margin-right: 0;
-}
 .nav-button__container > span {
   display: block;
   overflow: hidden;
@@ -30,8 +26,4 @@
   /* width: 60%; */
   opacity: 1;
   transition: 0.2s ease-out;
-}
-.hidden {
-  width: 0;
-  opacity: 0;
 }

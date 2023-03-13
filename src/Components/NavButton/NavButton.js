@@ -18,6 +18,7 @@ export default function NavButton({ checked, name, Icon }) {
   const buttonClasses = `nav-button__container ${foldedButton}`;
   const iconMargin = checked ? "" : "mr-0";
   const iconClasses = `nav-button__icon ${iconMargin}`;
+  const hideSpan = checked ? {} : { display: "none" };
 
   return (
     <Link to={"/"} style={linkStyle}>
@@ -27,7 +28,7 @@ export default function NavButton({ checked, name, Icon }) {
         >
           {Icon}
         </IconContext.Provider>
-        <span className={checked ? "" : "hidden"}>{name}</span>
+        <span style={hideSpan}>{name}</span>
       </div>
     </Link>
   );
